@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces_1", "Interfaces_1\Interfaces_1.csproj", "{07EDE858-9802-4501-BC31-9269EEAAAC92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telephony_3", "Telephony_3\Telephony_3.csproj", "{041BB1A6-C439-4CF5-A4FF-8EB97D280C4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07EDE858-9802-4501-BC31-9269EEAAAC92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07EDE858-9802-4501-BC31-9269EEAAAC92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07EDE858-9802-4501-BC31-9269EEAAAC92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07EDE858-9802-4501-BC31-9269EEAAAC92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{041BB1A6-C439-4CF5-A4FF-8EB97D280C4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{041BB1A6-C439-4CF5-A4FF-8EB97D280C4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{041BB1A6-C439-4CF5-A4FF-8EB97D280C4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{041BB1A6-C439-4CF5-A4FF-8EB97D280C4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A0F64EB0-5EB5-4D76-B583-AA6B37593D8A}
+	EndGlobalSection
+EndGlobal

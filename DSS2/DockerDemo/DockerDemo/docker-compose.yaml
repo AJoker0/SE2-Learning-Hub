@@ -1,0 +1,7 @@
+﻿services:
+    demo-api:
+        build: .
+        environment:
+            ASPNETCORE_ENVIRONMENT: "Production"
+      postgres:
+        image: 
