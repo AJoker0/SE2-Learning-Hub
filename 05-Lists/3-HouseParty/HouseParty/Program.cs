@@ -1,58 +1,48 @@
-﻿namespace HouseParty
+﻿using System;
+using System.Collections.Generic;
+
+namespace HouseParty
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-           
+            int commandsCount = int.Parse(Console.ReadLine());
+            List<string> guests = new List<string>();
 
-            int lines = int.Parse(Console.ReadLine());
-            
-
-
-            List<string> coming = new List<string>();
-            List<string> notComing = new List<string>();
-
-            for ( int i = 0; i < lines; i++)
+            for (int i = 0; i < commandsCount; i++)
             {
                 string command = Console.ReadLine();
-                string name = command.Substring(0, command.IndexOf(' '));
+                string name = command.Split(' ')[0];
 
-                if (command.Contains("not"))
+                if (command.Contains("not going"))
                 {
-                    //negative
-
-                    if (coming.Contains(name))
+                    if (guests.Contains(name))
                     {
-                        coming.Remove(name);
-
+                        guests.Remove(name);
                     }
                     else
                     {
-                        Console.WriteLine($"{name} is not in the list");
+                        Console.WriteLine($"{name} is not in the list!");
                     }
-
-                    
-                } else
+                }
+                else
                 {
-                    if (coming.Contains(name))
+                    if (guests.Contains(name))
                     {
-                        Console.WriteLine($"{name} is already in the list");
+                        Console.WriteLine($"{name} is already in the list!");
                     }
                     else
                     {
-                        coming.Add(name);
+                        guests.Add(name);
                     }
                 }
             }
-            foreach (string name in coming)
+
+            foreach (string guest in guests)
             {
-                Console.WriteLine(name);
+                Console.WriteLine(guest);
             }
-            
-
         }
-        
-
     }
 }
